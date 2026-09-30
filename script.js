@@ -177,7 +177,7 @@ function renderProducts() {
           <h5 class="product-title">${product.name}</h5>
           <p class="product-desc">${product.desc}</p>
           <div class="product-meta">
-            <strong class="product-price">${product.price > 0 ? formatRupiah(product.price) : "Tanya harga"}</strong>
+            <strong class="product-price">Rp. xxx.xxx</strong>
             <span class="product-unit">${product.unit}</span>
           </div>
           ${product.options?.colors?.length ? `<div class="product-swatches" aria-label="Pilihan warna">${product.options.colors.map((color) => `<span class="product-swatch" style="--swatch-color: ${color.value}" title="${color.name}" aria-label="${color.name}"></span>`).join("")}</div>` : ""}
@@ -313,8 +313,8 @@ function renderProductDetail() {
         </div>
 
         <div class="detail-price-box">
-          <span>Harga & stok</span>
-          <strong>Tanyakan ke admin</strong>
+          <span>Harga</span>
+          <strong>Rp. xxx.xxx</strong>
           <small>${product.unit}</small>
         </div>
 
