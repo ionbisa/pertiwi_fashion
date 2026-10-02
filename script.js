@@ -6,19 +6,25 @@ const marketplaceSearchUrls = {
 const products = [
   {
     id: 1,
-    name: "Daster Rayon Premium",
+    name: "Daster Taupe",
     category: "Daster",
-    price: 129000,
-    desc: "Daster rayon premium dengan motif modern dan jatuh yang nyaman.",
+    price: 0,
+    desc: "Daster motif bernuansa taupe dengan lengan pendek dan kancing depan.",
     icon: "bi-flower1",
     unit: "Satu pcs",
     visualClass: "visual-daster",
-    rating: 4.9,
-    sold: "328",
-    reviewsCount: "86",
-    variants: ["All size", "Motif floral", "Motif geometris"],
+    cardImage: "img/produk/daster/Daster Taupe-1.png",
+    gallery: [
+      "img/produk/daster/Daster Taupe-1.png",
+      "img/produk/daster/Daster Taupe-2.png",
+    ],
+    specs: [
+      "Warna: Taupe",
+      "Model: Lengan pendek, kerah bulat, dan kancing depan",
+      "Bahan dan ukuran: Konfirmasi kepada admin",
+    ],
     detail:
-      "Daster berbahan rayon premium yang lembut, ringan, dan adem. Siluet longgar memberi ruang gerak untuk aktivitas di rumah.",
+      "Daster bermotif bernuansa taupe untuk menemani waktu santai di rumah. Model lengan pendek dengan kerah bulat dan kancing depan. Lihat galeri untuk detail motif; informasi bahan, ukuran, harga, dan stok dapat ditanyakan kepada admin."
   },
   {
     id: 2,
@@ -65,16 +71,73 @@ const products = [
   },
   {
     id: 3,
-    name: "Mukena",
+    name: "Mukena Polkadot",
     category: "Mukena",
     price: 0,
-    desc: "Mukena untuk menemani kebutuhan ibadah sehari-hari.",
+    desc: "Mukena motif polkadot dengan detail kepala elastis dan tas senada.",
     icon: "bi-moon-stars",
     unit: "Satu set",
     visualClass: "visual-mukena",
-    variants: [],
+    cardImage: "img/produk/mukena/mukena_putih.jpeg",
+    gallery: [
+      "img/produk/mukena/mukena_putih.jpeg",
+      "img/produk/mukena/mukena_abu.jpeg",
+    ],
+    options: {
+      colors: [
+        {
+          name: "Putih",
+          value: "#f5f3ef",
+          image: "img/produk/mukena/mukena_putih.jpeg",
+        },
+        {
+          name: "Ungu Dusty Titik Abu Tua",
+          value: "#aa929e",
+          image: "img/produk/mukena/mukena_abu.jpeg",
+        },
+      ],
+      sizes: [],
+    },
+    specs: [
+      "Motif: Polkadot",
+      "Detail: Kepala elastis dan tas mukena senada",
+      "Ukuran dan jenis bahan: Konfirmasi kepada admin",
+    ],
     detail:
-      "Informasi bahan, motif, ukuran, dan warna mukena dapat dikonfirmasi kepada admin. Hubungi kami untuk melihat pilihan yang tersedia.",
+      "Mukena polkadot dengan pilihan putih dan ungu dusty bertitik abu tua sesuai foto katalog. Dilengkapi detail kepala elastis serta tas senada yang praktis dibawa. Informasi ukuran, jenis bahan, harga, dan ketersediaan warna dapat dikonfirmasi kepada admin."
+  },
+  {
+    id: 4,
+    name: "Daster Marmer",
+    category: "Daster",
+    price: 0,
+    desc: "Daster motif marmer bernuansa pink dengan pilihan ukuran XXL dan XXXXL.",
+    icon: "bi-flower1",
+    unit: "Satu pcs",
+    visualClass: "visual-daster",
+    cardImage: "img/produk/daster/Daster Marmer-1.png",
+    gallery: [
+      "img/produk/daster/Daster Marmer-1.png",
+      "img/produk/daster/Daster Marmer-2 .png",
+    ],
+    options: {
+      colors: [
+        {
+          name: "Pink Marmer",
+          value: "#c57594",
+          image: "img/produk/daster/Daster Marmer-1.png",
+        },
+      ],
+      sizes: ["XXL", "XXXXL"],
+    },
+    specs: [
+      "Ukuran: XXL dan XXXXL",
+      "Motif: Marmer bernuansa pink",
+      "Model: Lengan pendek, kerah bulat, dan kancing depan",
+      "Bahan dan ukuran dalam cm: Konfirmasi kepada admin",
+    ],
+    detail:
+      "Daster motif marmer bernuansa pink dengan lengan pendek, kerah bulat, dan kancing depan. Pilihan ukuran XXL dan XXXXL mengikuti keterangan pada foto katalog. Lihat galeri untuk detail motif dan model; bahan, ukuran dalam cm, harga, dan stok akan dikonfirmasi oleh admin.",
   },
 ];
 
@@ -340,6 +403,7 @@ function renderProductDetail() {
                 .join("")}
             </div>
           </div>
+          ${options.sizes?.length ? `
           <div class="detail-option-row align-start">
             <span>Ukuran</span>
             <div class="detail-variants">
@@ -358,6 +422,7 @@ function renderProductDetail() {
                 .join("")}
             </div>
           </div>
+          ` : ""}
         `
             : variants.length
               ? `
