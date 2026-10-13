@@ -5,28 +5,6 @@ const marketplaceSearchUrls = {
 };
 const products = [
   {
-    id: 1,
-    name: "Daster Taupe",
-    category: "Daster",
-    price: 0,
-    desc: "Daster motif bernuansa taupe dengan lengan pendek dan kancing depan.",
-    icon: "bi-flower1",
-    unit: "Satu pcs",
-    visualClass: "visual-daster",
-    cardImage: "img/produk/daster/Daster Taupe-1.png",
-    gallery: [
-      "img/produk/daster/Daster Taupe-1.png",
-      "img/produk/daster/Daster Taupe-2.png",
-    ],
-    specs: [
-      "Warna: Taupe",
-      "Model: Lengan pendek, kerah bulat, dan kancing depan",
-      "Bahan dan ukuran: Konfirmasi kepada admin",
-    ],
-    detail:
-      "Daster bermotif bernuansa taupe untuk menemani waktu santai di rumah. Model lengan pendek dengan kerah bulat dan kancing depan. Lihat galeri untuk detail motif; informasi bahan, ukuran, harga, dan stok dapat ditanyakan kepada admin."
-  },
-  {
     id: 2,
     name: "Pajamas Set Mellow",
     category: "Pajamas",
@@ -70,6 +48,139 @@ const products = [
       "Pajamas set floral atasan dan celana dengan pilihan warna biru, cream, dan pink. Tersedia dalam ukuran L dan XXL.",
   },
   {
+    id: 1,
+    name: "Daster Taupe",
+    category: "Daster",
+    price: 0,
+    desc: "Daster motif bernuansa taupe dengan lengan pendek dan kancing depan.",
+    icon: "bi-flower1",
+    unit: "Satu pcs",
+    visualClass: "visual-daster",
+    cardImage: "img/produk/daster/Daster Taupe-1.png",
+    gallery: [
+      "img/produk/daster/Daster Taupe-1.png",
+      "img/produk/daster/Daster Taupe-2.png",
+    ],
+    specs: [
+      "Warna: Taupe",
+      "Model: Lengan pendek, kerah bulat, dan kancing depan",
+      "Bahan dan ukuran: Konfirmasi kepada admin",
+    ],
+    detail:
+      "Daster bermotif bernuansa taupe untuk menemani waktu santai di rumah. Model lengan pendek dengan kerah bulat dan kancing depan. Lihat galeri untuk detail motif; informasi bahan, ukuran, harga, dan stok dapat ditanyakan kepada admin."
+  },
+  {
+    id: 5,
+    name: "Pajamas Ayara",
+    category: "Pajamas",
+    price: 0,
+    desc: "Set piyama motif bunga dengan atasan lengan panjang dan celana panjang.",
+    icon: "bi-moon-stars",
+    unit: "Satu set",
+    visualClass: "visual-pajamas",
+    cardImage: "img/produk/pajamas/Pajamas Ayara_1.png",
+    gallery: [
+      "img/produk/pajamas/Pajamas Ayara_1.png",
+      "img/produk/pajamas/Pajamas Ayara_3.png",
+    ],
+    specs: [
+      "Motif: Bunga",
+      "Model: Atasan lengan panjang, kancing depan, dan celana panjang",
+      "Bahan dan ukuran: Konfirmasi kepada admin",
+    ],
+    detail:
+      "Pajamas Ayara hadir dengan motif bunga dalam set atasan lengan panjang berkancing depan dan celana panjang. Lihat galeri untuk detail motif dan model; informasi bahan, ukuran, harga, dan stok dapat ditanyakan kepada admin.",
+  },
+  {
+    id: 4,
+    name: "Daster Marmer",
+    category: "Daster",
+    price: 0,
+    desc: "Daster motif marmer bernuansa pink dengan pilihan ukuran XXL dan XXXXL.",
+    icon: "bi-flower1",
+    unit: "Satu pcs",
+    visualClass: "visual-daster",
+    cardImage: "img/produk/daster/Daster Marmer-1.png",
+    gallery: [
+      "img/produk/daster/Daster Marmer-1.png",
+      "img/produk/daster/Daster Marmer-2 .png",
+    ],
+    options: {
+      colors: [
+        {
+          name: "Pink Marmer",
+          value: "#c57594",
+          image: "img/produk/daster/Daster Marmer-1.png",
+        },
+      ],
+      sizes: ["XXL", "XXXXL"],
+    },
+    specs: [
+      "Ukuran: XXL dan XXXXL",
+      "Motif: Marmer bernuansa pink",
+      "Model: Lengan pendek, kerah bulat, dan kancing depan",
+      "Bahan dan ukuran dalam cm: Konfirmasi kepada admin",
+    ],
+    detail:
+      "Daster motif marmer bernuansa pink dengan lengan pendek, kerah bulat, dan kancing depan. Pilihan ukuran XXL dan XXXXL mengikuti keterangan pada foto katalog. Lihat galeri untuk detail motif dan model; bahan, ukuran dalam cm, harga, dan stok akan dikonfirmasi oleh admin.",
+  },
+  {
+    id: 7,
+    name: "Pajamas Tulip",
+    category: "Pajamas",
+    price: 0,
+    desc: "Set piyama motif tulip berbahan Royal Premium dengan atasan dan celana pendek.",
+    icon: "bi-moon-stars",
+    unit: "Satu set",
+    visualClass: "visual-pajamas",
+    cardImage: "img/produk/pajamas/Pajamas Tulip_1.png",
+    gallery: [
+      "img/produk/pajamas/Pajamas Tulip_1.png",
+      "img/produk/pajamas/Pajamas Tulip_2.png",
+    ],
+    options: {
+      colors: [],
+      sizes: ["All Size", "XXL"],
+    },
+    specs: [
+      "Bahan: Royal Premium",
+      "Ukuran: All Size dan XXL",
+      "Motif: Tulip",
+      "Model: Atasan lengan pendek, kancing depan, dan celana pendek",
+      "Ukuran dalam cm: Konfirmasi kepada admin",
+    ],
+    detail:
+      "Pajamas Tulip hadir dengan motif tulip dalam set atasan lengan pendek berkancing depan dan celana pendek. Bahan Royal Premium serta pilihan ukuran All Size dan XXL mengikuti keterangan pada foto katalog. Lihat galeri untuk detail model; ukuran dalam cm, harga, dan stok dapat dikonfirmasi kepada admin.",
+  },
+  {
+    id: 6,
+    name: "Daster Puspa",
+    category: "Daster",
+    price: 0,
+    desc: "Daster motif bunga berbahan Royal Premium dengan ukuran All Size dan XXL.",
+    icon: "bi-flower1",
+    unit: "Satu pcs",
+    visualClass: "visual-daster",
+    cardImage: "img/produk/daster/Daster Puspa_1.png",
+    gallery: [
+      "img/produk/daster/Daster Puspa_1.png",
+      "img/produk/daster/Daster Puspa_2.png",
+    ],
+    options: {
+      colors: [],
+      sizes: ["All Size", "XXL"],
+    },
+    specs: [
+      "Bahan: Royal Premium",
+      "Ukuran: All Size dan XXL",
+      "Motif: Bunga",
+      "Model: Lengan pendek dan kancing depan",
+      "Ukuran dalam cm: Konfirmasi kepada admin",
+    ],
+    detail:
+      "Daster Puspa bermotif bunga dengan lengan pendek dan kancing depan. Bahan Royal Premium serta pilihan ukuran All Size dan XXL mengikuti keterangan pada foto katalog. Lihat galeri untuk detail model; ukuran dalam cm, harga, dan stok dapat dikonfirmasi kepada admin.",
+  },
+  {
     id: 3,
     name: "Mukena Polkadot",
     category: "Mukena",
@@ -106,39 +217,6 @@ const products = [
     detail:
       "Mukena polkadot dengan pilihan putih dan ungu dusty bertitik abu tua sesuai foto katalog. Dilengkapi detail kepala elastis serta tas senada yang praktis dibawa. Informasi ukuran, jenis bahan, harga, dan ketersediaan warna dapat dikonfirmasi kepada admin."
   },
-  {
-    id: 4,
-    name: "Daster Marmer",
-    category: "Daster",
-    price: 0,
-    desc: "Daster motif marmer bernuansa pink dengan pilihan ukuran XXL dan XXXXL.",
-    icon: "bi-flower1",
-    unit: "Satu pcs",
-    visualClass: "visual-daster",
-    cardImage: "img/produk/daster/Daster Marmer-1.png",
-    gallery: [
-      "img/produk/daster/Daster Marmer-1.png",
-      "img/produk/daster/Daster Marmer-2 .png",
-    ],
-    options: {
-      colors: [
-        {
-          name: "Pink Marmer",
-          value: "#c57594",
-          image: "img/produk/daster/Daster Marmer-1.png",
-        },
-      ],
-      sizes: ["XXL", "XXXXL"],
-    },
-    specs: [
-      "Ukuran: XXL dan XXXXL",
-      "Motif: Marmer bernuansa pink",
-      "Model: Lengan pendek, kerah bulat, dan kancing depan",
-      "Bahan dan ukuran dalam cm: Konfirmasi kepada admin",
-    ],
-    detail:
-      "Daster motif marmer bernuansa pink dengan lengan pendek, kerah bulat, dan kancing depan. Pilihan ukuran XXL dan XXXXL mengikuti keterangan pada foto katalog. Lihat galeri untuk detail motif dan model; bahan, ukuran dalam cm, harga, dan stok akan dikonfirmasi oleh admin.",
-  },
 ];
 
 let cart = [];
@@ -152,7 +230,7 @@ let checkoutMode = "detail";
 let productSearchQuery = "";
 let productCategoryFilter = "";
 let productPage = 1;
-const productsPerPage = 3;
+const productsPerPage = 4;
 
 function formatRupiah(number) {
   return new Intl.NumberFormat("id-ID", {
@@ -229,7 +307,7 @@ function renderProducts() {
   productList.innerHTML = pagedProducts
     .map(
       (product) => `
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-3">
       <article class="product-card">
         <button type="button" class="product-img product-image-button ${product.cardImage ? "product-img-photo" : ""}" onclick="openProductDetail(${product.id})" aria-label="Lihat detail ${product.name}" aria-haspopup="dialog">
           ${renderProductVisual(product)}
