@@ -1,4 +1,4 @@
-const whatsappNumber = "62821101885";
+const whatsappNumber = "628211018885";
 const marketplaceSearchUrls = {
   shopee: "https://shopee.co.id/search?keyword=",
   tiktok: "https://www.tiktok.com/search?q=",
